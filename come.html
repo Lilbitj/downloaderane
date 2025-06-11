@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>YouTube Downloader</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #1e1e2f;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background-color: #2e2e40;
+      padding: 40px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    input, select {
+      padding: 10px;
+      width: 300px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: none;
+      margin-bottom: 15px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #f06292;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ec407a;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎵 YouTube MP3/MP4 Downloader 🎥</h1>
+    <form action="/download" method="POST">
+      <input type="text" name="url" placeholder="Masukkan link YouTube di sini" required><br>
+      <select name="format">
+        <option value="mp3">Download MP3</option>
+        <option value="mp4">Download MP4</option>
+      </select><br>
+      <button type="submit">🎬 Download</button>
+    </form>
+  </div>
+</body>
+</html>
